@@ -1,0 +1,183 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+/*自定义按钮开始*/
+.swiper-button-next{
+    background: url("../img/up.png")no-repeat center;
+    top: auto;
+    bottom: 4%;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    animation: run 1s linear infinite;
+}
+@keyframes run {
+    from{
+        bottom: 1%;
+        opacity: 1;
+    }
+    to{
+        bottom: 4%;
+        opacity: 0;
+    }
+}
+/*自定义按钮结束*/
+
+/*音乐部分开始*/
+#music{
+    width: 60px;
+    height: 60px;
+    z-index: 9;
+    top: 3%;
+    right: 3%;
+    position: fixed;
+}
+#music .music_Img{
+    position: relative;
+    left: 8px;
+    top: 8px;
+    animation: music 2s linear infinite;
+}
+#music .music_bgd{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+}
+@keyframes music {
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg)
+    }
+}
+/*音乐部分结束*/
+/*第一屏开始*/
+.swiper-slide.one{
+    background: url("../img/onebg.jpg");
+    background-size: 100% 100%;
+    position: relative;
+}
+.swiper-slide.one .first_head{
+    width: 70%;
+    height: 50%;
+    border:10px solid #fff;
+    position: absolute;
+    top:4%;
+    overflow: hidden;
+}
+.swiper-slide.one .first_head img{
+    overflow: hidden;
+    width: 100%;
+}
+.swiper-slide.one .first_top{
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    left: -20%;
+}
+.swiper-slide.one .first_top img{
+    width: 35%;
+}
+.swiper-slide.one .first_center{
+    position: absolute;
+    top: 68%;
+    width: 100%;
+}
+.swiper-slide.one .first_center img{
+    width: 80%;
+}
+.swiper-slide.one .first_bottom{
+    position: absolute;
+    top:90%;
+}
+.swiper-slide.one .first_bottom div{
+    float: left;
+    margin: 0;
+    font-size: 10vw;
+    color: rgba(255, 255, 255, 0.75);
+}
+/*第一屏结束*/
+/*第二屏开始*/
+.swiper-slide.two{
+    background: url("../img/twobg.jpg");
+    background-size: 100% 100%;
+    position: relative;
+}
+.swiper-slide.two img{
+    width: 100%;
+}
+.swiper-slide.two .top{
+    width: 40%;
+    height: 25%;
+    border: 5px solid #fff;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    overflow: hidden;
+    z-index: 1;
+}
+.swiper-slide.two .bottom{
+    width: 40%;
+    height: 25%;
+    border: 5px solid #fff;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    overflow: hidden;
+    z-index: 1;
+}
+.swiper-slide.two .center{
+    width: 65%;
+    height: 30%;
+    border: 5px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    z-index: 2;
+}
+/*第二屏结束*/
+/*第三屏开始*/
+.swiper-slide.three div{
+    width: 100%;
+    height: 100%;
+    background: url("../img/three.jpg");
+    background-size: 100% 100%;
+}
+/*第三屏结束*/

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+
+        <!--第一屏开始-->
+      <div class="swiper-slide one">
+          <div class="first_head ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0s"><img src="img/one.jpg" alt=""></div>
+          <div class="first_top ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="1s"><img src="img/jiezhi.png" alt=""></div>
+          <div class="first_center ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1.5s" swiper-animate-delay="2.5s"><img src="img/womenjiehunla.png" alt=""></div>
+          <div class="first_bottom">
+              <div class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1.5s" swiper-animate-delay="4s">2017</div>
+              <div class="ani" swiper-animate-effect="flash" swiper-animate-duration="1.5s" swiper-animate-delay="5.5s">.</div>
+              <div class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1.5s" swiper-animate-delay="7s">12</div>
+              <div class="ani" swiper-animate-effect="flash" swiper-animate-duration="1.5s" swiper-animate-delay="8.5s">.</div>
+              <div class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1.5s" swiper-animate-delay="10s">30</div>
+          </div>
+      </div>
+        <!--第一屏结束-->
+        <!--第二屏开始-->
+      <div class="swiper-slide two">
+          <div class="top ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1.5s" swiper-animate-delay="0s"><img src="img/two_top.jpg" alt=""></div>
+          <div class="center ani" swiper-animate-effect="zoomInDown" swiper-animate-duration="1.5s" swiper-animate-delay="3s"><img src="img/two_center.jpg" alt=""></div>
+          <div class="bottom ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1.5s" swiper-animate-delay="1.5s"><img src="img/two_bottom.jpg" alt=""></div>
+      </div>
+        <!--第二屏结束-->
+        <!--第三屏开始-->
+      <div class="swiper-slide three">
+          <div>
+
+          </div>
+      </div>
+        <!--第三屏结束-->
+      <div class="swiper-slide">Slide 4</div>
+    </div>
+      <div class="swiper-pagination"></div><!--右面的导航点-->
+      <!--<div class="swiper-button-prev"></div>--><!--前进后退按钮-->
+      <div class="swiper-button-next"></div>
+  </div>
+
+  <div id="music">
+      <img class="music_bgd" src="img/music.gif" alt="">
+      <img class="music_Img" src="img/music_off.png" alt="">
+      <audio src="img/bgmusic.mp3" autoplay loop="loop"></audio>
+  </div>
+
+
+
+</body>
+<script src="js/swiper.min.js"></script>
+<script src="js/swiper.animate1.0.2.min.js"></script>
+<script src="js/main.js"></script>
+</html>
